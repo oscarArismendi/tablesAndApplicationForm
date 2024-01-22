@@ -31,7 +31,9 @@ input[type="checkbox"]:checked + .exercise{
     display: block;
 }
 
-
+table{
+    margin: 0.1em auto;
+}
 
 td,th {
   border: 1px solid white;
