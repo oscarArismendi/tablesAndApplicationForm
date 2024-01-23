@@ -58,4 +58,18 @@ td,th {
     font-size: 2em;
 }
 
+.background-white{
+    background-color: white;
+}
+.border-3D{
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+}
+
+.font1point5{
+    font-size: 1.5em;
+}
+
 
