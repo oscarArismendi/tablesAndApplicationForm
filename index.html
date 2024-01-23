@@ -11,19 +11,19 @@
         <div id="menu" class="center">menu</div>
         
         
-        <label for="table1Checkbox" class="center">
+        <label for="table1Checkbox" class="center red-border">
             <input type="checkbox" id="table1Checkbox" name="table1">table 1
             <div class="exercise">
-                <h2>El desempleo en España</h2>
-                <p>La siguiente tabla muestra la evolucion del desempleo en España comparado
-                    con la media de los 27 paises de la Union Europea. Grecia, que compite con 
-                    Espara en ser el primero en esta vergonzosa competicion y Estados Unidos y Japon,
-                    dos de las primeras economias mundiales.
+                <h2>The unemployment in Spain</h2>
+                <p>The next table show the evolution of unemployment in Spain compared
+                    with the average of the 27 countries of the Europe Union. Greece,compete with 
+                    Spain to be the first one of this embarrassing competition and United States and Japan
+                    are the top 2 economies in the world.
                 </p>
                 <table class="border">
                     <tr>
                         
-                            <th class="bold">País</th>
+                            <th class="bold">Country</th>
                             <th class="bold">2000</th>
                             <th class="bold">2001</th>
                             <th class="bold">2002</th>
@@ -40,7 +40,7 @@
                             <th class="bold">2013</th>                       
                     </tr>
                     <tr>
-                        <th>UE (27 países)</th>
+                        <th>UE (27 countries)</th>
                         <td>8.9</td>
                         <td>8.7</td>
                         <td>9</td>
@@ -58,7 +58,7 @@
                     </tr>
                     <tr>
                         
-                        <th class="bold">España</th>
+                        <th class="bold">Spain</th>
                         <th class="bold">11.9</th>
                         <th class="bold">10.6</th>
                         <th class="bold">11.5</th>
@@ -75,7 +75,7 @@
                         <th class="bold">26.1</th>                       
                     </tr>
                     <tr>
-                        <th>Grecia</th>
+                        <th>Greece</th>
                         <td>11.2</td>
                         <td>10.7</td>
                         <td>10.3</td>
@@ -92,7 +92,7 @@
                         <td>7.4</td>
                     </tr>
                     <tr>
-                        <th>Estados Unidos</th>
+                        <th>United States</th>
                         <td>4</td>
                         <td>4.8</td>
                         <td>5.8</td>
@@ -109,7 +109,7 @@
                         <td>7.4</td>
                     </tr>
                     <tr>
-                        <th>Japon</th>
+                        <th>Japan</th>
                         <td>4.7</td>
                         <td>5</td>
                         <td>5.4</td>
@@ -126,12 +126,12 @@
                         <td>4</td>
                     </tr>
                 </table>
-                <p>Fuente: <a href="https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Unemployment_statistics">Indice de desempleo anual</a>, Eurostat</p>
+                <p>Source: <a href="https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Unemployment_statistics">Index of unemployment yearly</a>, Eurostat</p>
             </div>
             
         </label>
 
-        <label for="table2Checkbox" class="center">
+        <label for="table2Checkbox" class="center red-border">
             <input type="checkbox" id="table2Checkbox" name="table2"> Table 2   
             <div class="exercise">
                 <table>
@@ -144,32 +144,32 @@
                     </tr>
                     <tr >
                         <td>Mates</td>
-                        <td colspan="3" rowspan="2" class="center font2">Dibujo</td>
-                        <td rowspan="3" >Historia</td>
+                        <td colspan="3" rowspan="2" class="center font2">Drawing</td>
+                        <td rowspan="3" >History</td>
                     </tr>
                     <tr >
-                        <td rowspan="3">fisica</td>
-                    </tr>
-                    <tr >
-                        
-                        <td>Descanso</td>
-                        <td>Descanso</td>
-                        <td>Descanso</td>
-                        
+                        <td rowspan="3">Physics</td>
                     </tr>
                     <tr >
                         
-                        <td>Gimnasia</td>
-                        <td>..futbolín..</td>
-                        <td>Gimnasia</td>
-                        <td>Mates</td>
+                        <td>Rest</td>
+                        <td>Rest</td>
+                        <td>Rest</td>
+                        
+                    </tr>
+                    <tr >
+                        
+                        <td>Gymnastic</td>
+                        <td>..football..</td>
+                        <td>Gymnastic</td>
+                        <td>Math</td>
                     </tr>
                 </table>
             </div>
         </label>
         
 
-        <label for="table3Checkbox" class="center">
+        <label for="table3Checkbox" class="center red-border">
             <input type="checkbox" id="table3Checkbox" name="table3"> Table 3
             <div class="exercise ">
                 <table width="500px" cellpadding="0" cellspacing="2px" style="text-align: center;">
@@ -222,14 +222,37 @@
                     </table>
             </div>
         </label>
-        <label for="applicationForm1Checkbox" class="center">
-            <input type="checkbox" id="table3Checkbox" name="table3"> Application Form 1
+        <label for="applicationForm1Checkbox" class="center red-border">
+            <input type="checkbox" id="form1Checkbox" name="form1"> Application Form 1
+            <div class="exercise">
+                <form name="application-form1" method="post" action="/send/">
+                    <fieldset>
+                        <legend>Personal Data</legend>
+                        <div>
+                        <label for="first-name">First Name:</label>
+                        <input tabindex="1" type="text" name="first-name" placeholder="For example: Juan">
+                        </div>
+                        <div>
+                        <label for="last-name">Last Name: </label>
+                        <input tabindex="2" type="text" name="last-name" placeholder="For example: Martinez">
+                        </div>
+                        <label for="sex">Select the sex:</label>
+                        <select id="sex">
+                            <option disabled selected>Choose a option</option>
+                            <option value="1">Male</option>
+                            <option value="2">Female</option>
+                        </select>
+                    </fieldset>
+
+                </form>
+            </div>
+        </label>
+        <label for="applicationForm2Checkbox" class="center">
+            <input type="checkbox" id="form2Checkbox" name="form2"> Application Form 2
             <div class="exercise">
                 show application form
             </div>
         </label>
-        <!-- <div class="exercise">application form 1</div>
-        <div class="exercise">application form 2</div> -->
     </section>
 </body>
 </html>

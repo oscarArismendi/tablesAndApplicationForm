@@ -14,7 +14,7 @@ section{
     align-items: center;
     
 }
-#menu, label{
+#menu, .red-border{
 
     width: 100%;
     border: red 4px solid;
