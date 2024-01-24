@@ -8,10 +8,10 @@
 </head>
 <body>
     <section>
-        <div id="menu" class="center">menu</div>
+        <div id="menu" class="center padding-space">menu</div>
         
         
-        <label for="table1Checkbox" class="center red-border">
+        <label for="table1Checkbox" class="center red-border padding-space">
             <input type="checkbox" id="table1Checkbox" name="table1">table 1
             <div class="exercise">
                 <h2>The unemployment in Spain</h2>
@@ -131,7 +131,7 @@
             
         </label>
 
-        <label for="table2Checkbox" class="center red-border">
+        <label for="table2Checkbox" class="center red-border padding-space">
             <input type="checkbox" id="table2Checkbox" name="table2"> Table 2   
             <div class="exercise">
                 <table>
@@ -169,7 +169,7 @@
         </label>
         
 
-        <label for="table3Checkbox" class="center red-border">
+        <label for="table3Checkbox" class="center red-border padding-space">
             <input type="checkbox" id="table3Checkbox" name="table3"> Table 3
             <div class="exercise ">
                 <table width="500px" cellpadding="0" cellspacing="2px" style="text-align: center;">
@@ -187,8 +187,8 @@
                     </tr>
                     <tr>
                         <td rowspan="2" colspan="2">Monday</td>
-                        <td rowspan="2" colspan="1">8:00 am</td>
-                        <td rowspan="2" colspan="1">5:00 am</td>
+                        <td rowspan="2" colspan="1" class="background-yellow">8:00 am</td>
+                        <td rowspan="2" colspan="1" class="background-violet">5:00 am</td>
                         <td rowspan="1" colspan="3">Introduction to xml</td>
                     </tr>
                     <tr>
@@ -196,45 +196,45 @@
                     </tr>
                     <tr>
                         <td rowspan="5" colspan="2">Tuesday</td>
-                        <td rowspan="2" colspan="1">8:00 am</td>
-                        <td rowspan="2" colspan="1">11:00 am</td>
+                        <td rowspan="2" colspan="1" class="background-yellow">8:00 am</td>
+                        <td rowspan="2" colspan="1" class="background-yellow">11:00 am</td>
                         <td rowspan="3" colspan="3" class="font1point5">XPath</td>
                     </tr>
                     <tr rowspan="1" colspan="2"></tr>
                     <tr>
-                        <td rowspan="2" colspan="1">11:00 am</td>
-                        <td rowspan="2" colspan="1">2:00 pm</td>
+                        <td rowspan="2" colspan="1" class="background-yellow">11:00 am</td>
+                        <td rowspan="2" colspan="1" class="background-green">2:00 pm</td>
                     </tr>
                     <tr>
                         <td rowspan="2" colspan="3" class="font1point5">XSL transformations</td>
 
                     </tr>
                     <tr>
-                        <td rowspan="1" colspan="1" >2:00 pm</td>
-                        <td rowspan="1" colspan="1">5:00 pm</td>
+                        <td rowspan="1" colspan="1" class="background-green">2:00 pm</td>
+                        <td rowspan="1" colspan="1" class="background-violet">5:00 pm</td>
                     </tr>
                     <tr>
                         <td rowspan="1" colspan="2">Wednesday</td>
-                        <td rowspan="1" colspan="1">8:00 am</td>
-                        <td rowspan="1" colspan="1">12:00 pm</td>
+                        <td rowspan="1" colspan="1" class="background-yellow">8:00 am</td>
+                        <td rowspan="1" colspan="1" class="background-green">12:00 pm</td>
                         <td rowspan="1" colspan="3">XSL Formatting Objects</td>
                     </tr>
                     </table>
             </div>
         </label>
-        <label for="applicationForm1Checkbox" class="center red-border">
+        <label for="applicationForm1Checkbox" class="center red-border padding-space" action="" method="get">
             <input type="checkbox" id="form1Checkbox" name="form1"> Application Form 1
             <div class="exercise">
                 <form name="application-form1" method="post" action="/send/">
                     <fieldset>
                         <legend>Personal Data</legend>
                         <div>
-                        <label for="first-name">First Name:</label>
-                        <input tabindex="1" type="text" name="first-name" placeholder="For example: Juan">
+                            <label for="first-name">First Name:</label>
+                            <input maxlength="50" tabindex="1" type="text" name="first-name" placeholder="For example: Juan">
                         </div>
                         <div>
-                        <label for="last-name">Last Name: </label>
-                        <input tabindex="2" type="text" name="last-name" placeholder="For example: Martinez">
+                            <label for="last-name">Last Name: </label>
+                            <input maxlength="50" tabindex="2" type="text" name="last-name" placeholder="For example: Martinez">
                         </div>
                         <label for="sex">Select the sex:</label>
                         <select id="sex">
@@ -242,15 +242,92 @@
                             <option value="1">Male</option>
                             <option value="2">Female</option>
                         </select>
+                        <div>
+                            <label for="email">email: </label>
+                            <input tabindex="2" type="text" name="email" placeholder="For example: Martinez@gmail.com">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <div>
+                            <input type="checkbox" name="concent-email" checked> 
+                            <label for="concent-email">Want to receive emails about news and offers</label>
+                        </div>
+                        <legend>Concent</legend>
+                        <div>
+                            <input type="checkbox" name="verify-reading"> 
+                            <label for="verify-reading">I have read and accept the general condition of the program and the normative about the protection of data</label>
+                        </div>
+                        <div>
+                            <input type="button" name="send" value="SEND"> 
+                        </div>
                     </fieldset>
 
                 </form>
             </div>
         </label>
-        <label for="applicationForm2Checkbox" class="center">
+        <label for="applicationForm2Checkbox" class="center red-border padding-space" action="" method="get">
             <input type="checkbox" id="form2Checkbox" name="form2"> Application Form 2
             <div class="exercise">
-                show application form
+                <form name="application-form1" method="post" action="/send/">
+                    <fieldset>
+                        <legend>Personal Data</legend>
+                        <div>
+                            <label for="name">Name:</label>
+                            <input tabindex="1" type="text" name="name" placeholder="For example: Juan Camilo" autofocus/>
+                        </div>
+                        <div>
+                            <label for="email">email: </label>
+                            <input tabindex="2" type="email" name="email" placeholder="Ex: Martinez@gmail.com">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>General Information</legend>
+                        <div>
+                            <label for="url">Enter an https:// URL:</label>
+                            <input type="url" name="url" id="url" placeholder="https://example.com" pattern="https://.*" size="30" required />
+                        </div>
+                        <div>
+                            <label for="start">Start Date:</label>
+                            <input type="date" id="start" name="trip-start" value="2018-07-22" min="2024-01-01" max="2024-12-31" />
+                        </div>
+                        <div>
+                            <label for="appointment">Choose a time for your meeting:</label>
+                            <input type="time" id="appointment" name="appointment" min="09:00" max="18:00" required />
+                        </div>
+                        <div>
+                            <label for="meeting-time">Choose a time for your appointment:</label>
+                            <input  type="datetime-local"  id="meeting-time" name="meeting-time" value="2024-06-12T19:30" min="2024-06-07T00:00" max="2024-08-14T00:00" />
+                        </div>
+                        <div>
+                            <label for="month">Start month:</label>
+                            <input type="month" id="month" name="month" min="2024-01" value="2024-12" />
+                        </div>
+                        <div>
+                            <label for="week">Choose a week in May or June:</label>
+                            <input type="week" name="week" id="week" min="2024-W18" max="2024-W26" required />
+                        </div>
+                        <div>
+                            <label for="number">Type a number between -10 and 10:</label>
+                            <input type="number" id="number" name="number" min="-10" max="10" required/>
+                        </div>
+                        <div>
+                            <label for="phone">Enter your phone number:<br />
+                                <small>Format: 607-6253177</small>
+                            </label>
+                            <input type="tel" id="phone" name="phone" pattern="[6]{1}[0-9]{2}-[6]{1}[0-9]{6}" required />
+                        </div>
+                        <div>
+                            <label for="head">Favorite Color?</label>
+                            <input type="color" id="head" name="head" value="#e66465" />
+                        </div>
+                        <div>
+                            <label for="site-search">Search the site:</label>
+                            <input type="search" id="site-search" name="q" />
+                            <button>Search</button>
+                        </div>
+                        </fieldset>
+                    <input type="button" name="send" value="SEND"> 
+                </form>
             </div>
         </label>
     </section>

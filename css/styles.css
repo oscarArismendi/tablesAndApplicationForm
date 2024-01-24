@@ -40,7 +40,7 @@ td,th {
   padding: 1px;
   font-weight: 400;
 }
-/*usefull class*/
+/*utils*/
 .bold{
     font-weight: 700;
 }
@@ -61,6 +61,19 @@ td,th {
 .background-white{
     background-color: white;
 }
+
+.background-yellow{
+    background-color: #d9d9af;
+}
+
+.background-violet{
+    background-color: #cdceff;
+}
+
+.background-green{
+    background-color: #a1c9a1;
+}
+
 .border-3D{
     border-top: 1px solid white;
     border-left: 1px solid white;
@@ -70,6 +83,11 @@ td,th {
 
 .font1point5{
     font-size: 1.5em;
+}
+
+.padding-space{
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 
